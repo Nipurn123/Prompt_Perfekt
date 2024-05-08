@@ -1,0 +1,14 @@
+streamlit
+pytube
+google-generativeai
+google-ai-generativelanguage
+langchain-core
+langchain-openai
+langchain-community
+langchain
+google-generativeai
+langchain-community  
+langchain-google-genai                            
+langchain-openai   
+bs4
+faiss-cpu
