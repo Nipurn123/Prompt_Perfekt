@@ -71,7 +71,7 @@ class Chatbot_main:
         self.st.info(info_message)
 
     def get_user_input(self):
-        return self.st.text_input("You:")
+        return self.st.text_input("Give your input prompt:")
 
     def get_current_timestamp(self):
         return datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
