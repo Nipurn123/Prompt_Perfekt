@@ -1,4 +1,4 @@
-[![Prompt_Perfekt](./Prompt_Perfekt.png)]
+![Prompt_Perfekt](./Prompt_Perfekt.png)
 
 
 
