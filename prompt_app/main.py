@@ -14,7 +14,7 @@ class ChatApp:
        
         self.model_name = st.sidebar.selectbox("Choose Generative AI Model", ["Nipurn's LLM", "Gemini","Ollama"])
         if self.model_name == "Nipurn's LLM":
-            self.api_key = 'sk-proj-1a5R6OdbKWOk8WW4tCsmT3BlbkFJu1FxVl1bnqwSAZBYjJxZ'
+            self.api_key = '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'
         elif self.model_name == "Gemini":
             self.api_key = st.sidebar.text_input("Enter your Google API Key:") # Sample API Key
 
