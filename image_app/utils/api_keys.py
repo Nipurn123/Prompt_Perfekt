@@ -1,2 +1,2 @@
 def get_api_key():
-    return "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"  # Sample API Key
+    return "sk-proj-eddaJH302TnAOL4nIe3wT3BlbkFJlaUjP21wkYiMzKjpDpcv"  # Sample API Key
