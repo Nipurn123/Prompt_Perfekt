@@ -9,6 +9,8 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+
 
 
 class Chatbot_main:
@@ -41,6 +43,13 @@ class Chatbot_main:
 
     def initialize_embeddings(self):
          return OpenAIEmbeddings(openai_api_key="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")
+
+    def initialize_embeddings1(self):
+        # Provide your Google API key here
+        google_api_key = "AIzaSyADEdfxRrcyqB-Kp-5u5CYjDrKNnxokWXQ"
+
+        # Initialize Google embeddings with the provided API key
+        return GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=google_api_key)   
        
 
     def split_documents(self, docs):
@@ -82,7 +91,7 @@ class Chatbot_main:
     @st.cache(allow_output_mutation=True)
     def load_and_process_document(self, url):
         docs = self.load_document(url)
-        embeddings = self.initialize_embeddings()
+        embeddings = self.initialize_embeddings1()
         documents = self.split_documents(docs)
         vector = self.create_vector_store(documents, embeddings)
         return docs, vector
